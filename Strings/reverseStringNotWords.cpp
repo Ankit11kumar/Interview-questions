@@ -38,6 +38,8 @@ int main()
 
         // To reverse last word as we won't encounter dot for it.
         reverse(str.begin(), str.end());
+
+        // Appending it to final result string.
         result += str;
         cout << result << endl;
     }
