@@ -7,16 +7,21 @@ class Solution
 {
 
 public:
+
+    // Function to find min. number of coins to get target sum 'V'.
     int minCoins(int coins[], int M, int V)
     {
+        // Declaring dp matrix
         int dp[M + 1][V + 1];
 
+        // Initialization of dp matrix (base case handling)
         for (int i = 0; i <= M; i++)
             dp[i][0] = 0;
 
         for (int j = 0; j <= V; j++)
             dp[0][j] = INT_MAX - 1;
 
+        // Implementing same logic as unbounded knapsack algorithm
         for (int i = 1; i <= M; i++)
         {
             for (int j = 1; j <= V; j++)
