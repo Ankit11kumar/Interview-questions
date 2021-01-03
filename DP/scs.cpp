@@ -1,6 +1,6 @@
 // Problem link - https://practice.geeksforgeeks.org/problems/shortest-common-supersequence0322/1#
 
-// Finding shortest common supersequence using DP.
+// Finding shortest common supersequence using DP
 
 // LOGIC-> SCS = len(s1) + len(s2) - LCS(s1,s2);
 
